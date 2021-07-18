@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 
-export const constantRoutes = [
+export const constantRoutes: Array<RouteRecordRaw> = [
   // {
   //   path: "/login",
   //   component: () => import("@/views/login"),
@@ -10,13 +10,11 @@ export const constantRoutes = [
     path: "/403",
     name: "403",
     component: () => import("@/views/403.vue"),
-    hidden: true,
   },
   {
-    path: "/404",
-    name: "404",
-    component: () => import("@/views/404.vue"),
-    hidden: true,
+    path: "/login",
+    name: "login",
+    component: () => import("@/views/login/Login.vue"),
   },
 ];
 
@@ -27,6 +25,7 @@ const routes: Array<RouteRecordRaw> = [
     name: "Home",
     component: Home,
   },
+  ...constantRoutes,
 ];
 
 const router = createRouter({

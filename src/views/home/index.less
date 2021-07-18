@@ -12,25 +12,30 @@
 }
 
 .banner {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background: linear-gradient(45deg, #1890ff, #cf1322 60%, #eeee);
+  background: #1890ff;
+
+  &__wapper {
+    width: 1024px;
+    margin: 0px auto;
+    display: flex;
+  }
+
+  &__title {
+    color: #fff;
+    width: 96px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  &__desc {
+    font-size: 12px;
+    line-height: 20px;
+  }
 
   &__left {
     flex: 1 1;
     color: #fff;
     text-align: left;
-
-    h1 {
-      font-size: 24px;
-      line-height: 32px;
-    }
-
-    p {
-      font-size: 14px;
-      line-height: 22px;
-    }
   }
 
   &__right {

@@ -1,0 +1,35 @@
+.home-main__banner {
+  align-content: center;
+  align-items: center;
+  background-color: #eee;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.banner {
+  background: #1890ff;
+}
+.banner__wapper {
+  width: 1024px;
+  margin: 0px auto;
+  display: flex;
+}
+.banner__title {
+  color: #fff;
+  width: 96px;
+  font-size: 48px;
+  line-height: 56px;
+}
+.banner__desc {
+  font-size: 12px;
+  line-height: 20px;
+}
+.banner__left {
+  flex: 1 1;
+  color: #fff;
+  text-align: left;
+}
+.banner__right {
+  flex: 1 1;
+  height: 200px;
+}
